@@ -1,0 +1,19 @@
+.blog-header {
+  display: flex;
+  width: 16%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-header img {
+  border-radius: 50px;
+}
+
+.blog-header .header-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
+
+.blog-header .header-content p {
+  margin: 0;
+}
