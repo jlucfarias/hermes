@@ -1,17 +1,56 @@
-/* Change to grid */
-/* https://www.w3schools.com/css/css_grid.asp */
-
 .blog-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .blog-list .blog-item {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.blog-list .blog-item:last-child {
+  margin-bottom: 0px;
+}
+
+.blog-list .blog-item a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inherit;
+  width: 150px;
+  height: 150px;
+}
+
+.blog-list .blog-item a img {
+  width: 100%;
+}
+.blog-list .blog-item .title-container {
+  display: inline-block;
+  height: 100%;
+  padding: 0 10px;
+  width: 70%;
+}
+
+.blog-list .blog-item .title-container label {
+  box-sizing: border-box;
+  font-size: 1.35rem;
+  font-weight: bold;
+  cursor: text;
+  word-break: break-all;
+}
+
+.blog-list.grid {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.blog-list.grid .blog-item {
   width: 200px;
   height: 150px;
   background-color: #fff;
@@ -21,7 +60,7 @@
   margin-right: 15px;
 }
 
-.blog-list .blog-item a {
+.blog-list.grid .blog-item a {
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -29,7 +68,7 @@
   text-decoration: none;
 }
 
-.blog-list .blog-item a img {
+.blog-list.grid .blog-item a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -38,18 +77,28 @@
   object-fit: cover;
 }
 
-.blog-list .blog-item a label {
-  box-sizing: border-box;
+.blog-list.grid .blog-item .title-container {
   width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 5px 0;
+  background-image: linear-gradient(to top, #000d, transparent);
+}
+
+.blog-list.grid .blog-item .title-container label {
+  box-sizing: border-box;
   position: absolute;
   bottom: 0;
   left: 0;
   font-size: 1.2rem;
   padding: 5px 10px;
   z-index: 1;
-  background-image: linear-gradient(to top, #000d, transparent);
   color: #fff;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  cursor: text;
 }
