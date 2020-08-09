@@ -1,0 +1,48 @@
+.category-container .category-add-input {
+  display: flex;
+}
+
+.category-container .category-add-input input {
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px 50px 10px 10px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.category-container .category-add-input a {
+  position: absolute;
+  content: "";
+  right: 1vw;
+  top: 1.5vh;
+  text-decoration: none;
+}
+
+.category-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 15px 0 10px;
+}
+
+.category-container ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.category-container ul li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.category-container ul li a {
+  text-decoration: none;
+}
+
+.category-container ul li a:first-child {
+  margin-right: 10px;
+}
+
+.category-container ul li:last-child {
+  margin-bottom: 0;
+}
