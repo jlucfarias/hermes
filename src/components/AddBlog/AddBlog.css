@@ -1,0 +1,55 @@
+.add-blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-bottom: 10px;
+}
+
+.add-blog-container input[type="text"] {
+  width: 100%;
+  padding: 10px 0 10px 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.1rem;
+}
+
+.add-blog-container .footer-actions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.add-blog-container .footer-actions label {
+  cursor: pointer;
+}
+
+.add-blog-container .footer-actions input {
+  width: 0;
+  height: 0;
+  color: transparent;
+  outline: 0;
+  overflow: hidden;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  white-space:nowrap;
+  margin: 0 10px;
+}
+
+.add-blog-container .footer-actions a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 10px;
+}
+
+.add-blog-container button {
+  border: 0;
+  background-color: #fff;
+  padding: 8px 25px;
+  font-size: 1.1rem;
+  box-shadow: 0 0 6px 2px #ccc;
+}
