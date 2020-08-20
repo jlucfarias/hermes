@@ -1,0 +1,11 @@
+.fab-container {
+  border-radius: 50%;
+  padding: 12px 17px;
+  appearance: none;
+  position: absolute;
+  bottom: 2.5vh;
+  right: 1.5vw;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
