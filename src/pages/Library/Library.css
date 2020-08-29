@@ -1,0 +1,8 @@
+.library-container {
+  padding: 0 20px;
+}
+
+.library-container h2 span {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
