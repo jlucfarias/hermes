@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Blog from './pages/Blog';
 import Feed from './pages/Feed';
+import Settings from './pages/Settings';
 
 export default function Routes(props) {
   return (
@@ -10,6 +11,9 @@ export default function Routes(props) {
       <Switch>
         <Route path="/" exact>
           <Feed />
+        </Route>
+        <Route path="/settings">
+          <Settings />
         </Route>
         <Route path="/blog">
           <Blog />

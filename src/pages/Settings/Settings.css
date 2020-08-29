@@ -1,0 +1,43 @@
+.settings-main {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  padding: 0 20px;
+}
+
+.settings-main .general-settings {
+  margin-bottom: 15vh;
+}
+
+.settings-main .general-settings h2 {
+  margin-bottom: 30px;
+}
+
+.settings-main .general-settings ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.settings-main .general-settings ul li {
+  height: 6.5vh;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 8vw;
+  align-items: flex-start;
+}
+
+.settings-main .general-settings ul li label {
+  color: #888;
+  font-size: 0.75rem;
+}
+
+.settings-main .general-settings ul li span {
+  padding-left: 10px;
+  width: calc(100% - 10px);
+}
