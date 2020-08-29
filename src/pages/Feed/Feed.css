@@ -1,0 +1,18 @@
+.feed-main {
+  height: calc(100vh - 80px);
+  padding: 0 20px;
+}
+
+.feed-main .empty-feed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.feed-main .feed-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
