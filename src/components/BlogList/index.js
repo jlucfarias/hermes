@@ -8,7 +8,7 @@ const renderItem = (item, grid = true) => {
       <a href="">
         <img src={item.image || 'https://picsum.photos/200/200'} alt=""/>
       </a>
-      <div class="title-container">
+      <div className="title-container">
         <label>{ item.title || '' }</label>
         {grid ? null : <p>{ item.description || '' }</p>}
       </div>
