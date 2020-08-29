@@ -4,14 +4,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50% 0 20px;
+  padding: 0 20px;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .Menu-container nav {
   display: flex;
   justify-content: space-between;
-  width: 35%;
+  width: 15%;
 }
 
 .Menu-container nav a {
@@ -43,4 +44,5 @@
 
 .Menu-container img {
   height: 50px;
+  transform: translate(-150%);
 }
