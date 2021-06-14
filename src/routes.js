@@ -8,6 +8,7 @@ import Post from './pages/Post';
 import Settings from './pages/Settings';
 
 export default function Routes(props) {
+  // AppContext
   return (
     <Router>
       <Switch>
