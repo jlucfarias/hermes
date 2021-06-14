@@ -1,3 +1,7 @@
+body {
+  overflow: overlay !important;
+}
+
 .post-container {
   display: flex;
   flex-direction: column;
@@ -7,52 +11,65 @@
 
 .post-container .post-header {
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin-bottom: 25px;
-  max-height: 15vh;
 }
 
 .post-container .post-header .post-title {
-  font-size: 2.5rem;
-  margin: 0;
   display: flex;
   align-items: center;
-}
-
-.post-container .post-header .post-title a {
-  font-size: 1rem;
+  font-size: 2.5rem;
   margin: 0;
-  font-weight: normal;
-  margin-left: 10px;
+  line-height: 100%;
 }
 
 .post-container .post-header .post-subtitle {
   font-size: 1.25rem;
   margin: 0;
+  color: #444;
 }
 
 .post-container .post-header .post-meta {
   display: flex;
   justify-content: space-between;
   color: #888;
+  user-select: none;
+}
+
+.post-container .post-header .post-meta a {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: normal;
+  margin-right: 10px;
 }
 
 .post-container .post-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .post-container .post-main .post-thumb {
-  margin-bottom: 10px;
-  max-width: 58%;
+  user-select: none;
 }
 
-.post-container .post-main .post-content {
-  width: 75%;
-  margin-bottom: 25px;
-  font-size: 1.3rem;
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .post-container .post-main {
+    align-items: center;
+  }
+
+  .post-container .post-main .post-thumb {
+    margin-bottom: 10px;
+    max-width: 58%;
+  }
+
+  .post-container .post-main .post-content {
+    width: 75%;
+    font-size: 1.3rem;
+  }  
 }

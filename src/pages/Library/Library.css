@@ -1,8 +1,64 @@
 .library-container {
-  padding: 0 20px;
+  overflow: overlay;
+  height: 79vh;
+  padding-bottom: 60px;
+}
+
+.library-container h2 {
+  margin-top: 0;
+  margin-left: 15px;
 }
 
 .library-container h2 span {
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  vertical-align: super;
+  margin-left: 5px;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw;
+  margin-bottom: 25px;
+}
+
+.tabs li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs li span {
+  font-size: 0.9rem;
+  vertical-align: super;
+}
+
+.read-later,
+.read-lists {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .library-container {
+    height: 77.3vh;
+  }
+
+  .library-container h2 span {
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+
+  .tabs {
+    padding: 0;
+    width: 25vw;
+    margin: 0 auto 25px auto;
+  }
 }

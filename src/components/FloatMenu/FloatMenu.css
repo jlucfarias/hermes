@@ -1,0 +1,25 @@
+.floatMenu-container {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  height: 10vh;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  z-index: 5;
+}
+
+.floatMenu-container a {
+  width: 34vw;
+  text-align: center;
+  text-decoration: none;
+  color: #212121;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floatMenu-container a.active {
+  color: red;
+}

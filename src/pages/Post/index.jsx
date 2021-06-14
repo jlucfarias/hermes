@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import Menu from "../../components/Menu";
 
 import './Post.css';
@@ -10,11 +8,11 @@ export default function Post() {
       <Menu />
       <main className="post-container">
         <header className="post-header">
-          <h1 className="post-title">
-            Title <a>Favorite</a> <a>Share</a>
-          </h1>
+          <h1 className="post-title">Title</h1>
           <h3 className="post-subtitle">Subtitle</h3>
           <section className="post-meta">
+            <a>Favorite</a>
+            <a>Share</a>
             <span className="post-time">4 min read</span>
           </section>
         </header>

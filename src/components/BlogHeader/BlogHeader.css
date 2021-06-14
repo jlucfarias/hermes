@@ -1,20 +1,36 @@
 .blog-header {
   display: flex;
-  width: 16%;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
+  padding: 0 20px;
 }
 
 .blog-header img {
   border-radius: 50px;
+  margin-right: 3vw;
 }
 
 .blog-header .header-content h2 {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
+  word-break: break-word;
+  margin: 0;
 }
 
 .blog-header .header-content p {
   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+  .blog-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .blog-header img {
+    margin-right: 1vw;
+  }
 }

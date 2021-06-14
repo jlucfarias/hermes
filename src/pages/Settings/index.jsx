@@ -1,45 +1,62 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { isMobile } from "react-device-detect";
 
 import Menu from "../../components/Menu";
+import FloatMenu from "../../components/FloatMenu";
 
 import './Settings.css';
 
 export default function Settings() {
+  const [mobile, setMobile] = useState(isMobile)
+
   return (
     <>
       <Menu />
       <main className="settings-main">
-        <div className="general-settings">
+        <section className="general-settings">
           <h2>General</h2>
           <ul>
             <li>
-              <label>Language</label>
+              <label for="language">
+                <span>Language</span>
+                <select id="language">
+                  <option>English</option>
+                  <option>Portuguese</option>
+                </select>
+              </label>
+            </li>
+            {/* <li>
+              <label>Theme</label>
               <select>
-                <option>English</option>
-                <option>Portuguese</option>
+                <option>Sunshine</option>
               </select>
+            </li> */}
+            <li>
+              <label>
+                <span>Update Frequency</span>
+                <select>
+                  <option>Daily</option>
+                </select>
+              </label>
             </li>
             <li>
-              <label>Theme</label><span>Sunshine</span>
+              <label>
+                <span>Update Categories</span>
+                <select>
+                  <option>All</option>
+                </select>
+              </label>
             </li>
-            <li>
-              <label></label><span>Import</span>
+            <li className="inline">
+              <a href="/">Import</a>
             </li>
-            <li>
-              <label></label><span>Export</span>
-            </li>
-            <li>
-              <label>Update Frequency</label><span>Daily</span>
-            </li>
-            <li>
-              <label>Update Categories</label><span>All</span>
+            <li className="inline">
+              <a href="/">Export</a>
             </li>
           </ul>
-        </div>
-        {/* <div className="products-pricing">
-          <h2>Products</h2>
-        </div> */}
+        </section>
       </main>
+      {mobile && <FloatMenu />}
     </>
   );
 }

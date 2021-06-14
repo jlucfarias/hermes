@@ -2,42 +2,103 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  height: calc(100vh - 80px);
-  padding: 0 20px;
-}
-
-.settings-main .general-settings {
-  margin-bottom: 15vh;
+  height: 79vh;
+  padding: 0 20px 18px;
 }
 
 .settings-main .general-settings h2 {
-  margin-bottom: 30px;
+  font-size: 2rem;
+  margin: 0 0 10px 0;
 }
 
 .settings-main .general-settings ul {
-  display: flex;
   margin: 0;
   padding: 0;
-  justify-content: space-around;
-  align-items: center;
+  list-style: none;
 }
 
 .settings-main .general-settings ul li {
-  height: 6.5vh;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 8vw;
-  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .settings-main .general-settings ul li label {
-  color: #888;
-  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.settings-main .general-settings ul li span {
-  padding-left: 10px;
-  width: calc(100% - 10px);
+.settings-main .general-settings ul li label span {
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+.settings-main .general-settings ul li label select {
+  appearance: none;
+  border: none;
+  background: transparent;
+  font-size: 0.8rem;
+  color: #676767;
+  width: 100%;
+  user-select: none;
+}
+
+.settings-main .general-settings ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.settings-main .general-settings ul li.inline {
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.settings-main .general-settings ul li.switch {
+  flex-direction: row;
+}
+
+.settings-main .general-settings ul l:last-of-type {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .settings-main {
+    height: 87.5vh;
+    padding: 0 20px;
+  }
+
+  .settings-main .general-settings h2 {
+    margin-bottom: 30px;
+  }
+
+  .settings-main .general-settings ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .settings-main .general-settings ul li {
+    height: 10vh;
+    width: 8vw;
+    margin: 0;
+  }
+
+  .settings-main .general-settings ul li label {
+    color: #888;
+    font-size: 0.75rem;
+  }
+
+  .settings-main .general-settings ul li label span {
+    margin: 0;
+  }
+
+  .settings-main .general-settings ul li label select {
+    padding: 5px 0;
+    appearance: auto;
+  }
 }

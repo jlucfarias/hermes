@@ -2,12 +2,21 @@
   border-radius: 50%;
   padding: 12px 17px;
   appearance: none;
-  position: absolute;
-  bottom: 2.5vh;
-  right: 1.5vw;
+  position: sticky;
+  bottom: 10vh;
+  margin-left: 83vw;
   border: none;
   font-size: 1.3rem;
-  cursor: pointer;
-  color: #ddd;
+  color: #fff;
   background-color: #333;
+  z-index: 5;
+}
+
+@media screen and (min-width: 1024px) {
+  .fab-container {
+    position: absolute;
+    bottom: 2vh;
+    right: 1vw;
+    margin: 0;
+  }
 }
